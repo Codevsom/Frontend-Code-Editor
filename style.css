@@ -1,0 +1,46 @@
+body {
+    font-size: 15pt;
+}
+
+.selector{
+  display:inline;
+}
+textarea{
+  width:100%;
+  height:40vh;
+  transition:0.4s;
+}
+textarea:focus{
+  background:url('cbg.jpg') no-repeat;
+  background-size:cover;
+  color:white;
+  outline:none;
+  border:2px solid #0077FF;
+  border-radius:15px;
+}
+iframe{
+  height:60vh;
+  width:100%;
+}
+button[onclick="run()"]{
+  border:none;
+  background:#459016;
+  color:white;
+  margin-left:100px;
+  height:50px;
+}
+button{
+  margin:0 1px 2px -5px;
+  width:60px;
+  height:50px;
+  border:none;
+  color:white;
+  overflow: hidden;
+  cursor:pointer;
+  background:#459016;
+  border-radius:10px;
+  transition:0.5s;
+}
+button:hover{
+  box-shadow: 4px -5px #000;
+}

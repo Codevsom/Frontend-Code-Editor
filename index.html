@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Code Editor</title>
+  <!-- HTML -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="branding">
+    <h6>SPARK - ONLINE CODE EDITOR</h6>
+  </div>
+  <!-code for top navigation bar-->
+  <div class="selector">
+    <button id="htmlb" onclick="showhtml()">HTML</button>
+    <button id="cssb" onclick="showcss()">CSS</button>
+    <button id="jsb" onclick="showjs()">JS</button>
+    <button onclick="run()">Run⟩</button>
+  </div>
+  
+  <!-code for code input-->
+  <div class="e-container">
+    <textarea id="html" placeholder="write some html" spellcheck="false"></textarea>
+    <textarea id="css" placeholder="write some css" spellcheck="false" hidden></textarea>
+    <textarea id="js" placeholder="write some javascript" spellcheck="false" hidden></textarea>
+  </div>
+  
+  <!-code for output-->
+  <div class="o-container">
+    <iframe id="output"></iframe>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
